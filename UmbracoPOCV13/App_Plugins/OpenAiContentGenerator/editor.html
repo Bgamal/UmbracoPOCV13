@@ -1,0 +1,11 @@
+<div ng-controller="OpenAiContentGeneratorController as vm">
+    <textarea ng-model="vm.prompt" placeholder="Enter prompt..." style="width:100%;height:60px"></textarea>
+    <button type="button" ng-click="vm.generate()" class="btn btn-primary" ng-disabled="vm.loading">
+        Generate Content
+    </button>
+    <div ng-if="vm.loading">Generating...</div>
+    <div ng-if="vm.result">
+        <label>Generated Content:</label>
+        <textarea ng-model="vm.result" style="width:100%;height:100px"></textarea>
+    </div>
+</div> 

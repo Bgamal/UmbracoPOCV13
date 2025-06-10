@@ -1,0 +1,14 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "openAiContentGenerator",
+      "name": "OpenAI Content Generator",
+      "editor": {
+        "view": "~/App_Plugins/OpenAiContentGenerator/editor.html"
+      }
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/OpenAiContentGenerator/editor.controller.js"
+  ]
+} 
